@@ -1,17 +1,18 @@
 package com.example.islamicapp.Fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.islamicapp.DataModels.Coordinates
 import com.example.islamicapp.Location.GetLocation
 import com.example.islamicapp.R
+import com.example.islamicapp.Utils.showToast
 import com.example.islamicapp.databinding.FragmentPrayerDetailsBinding
 
 class PrayerDetails : Fragment() {
@@ -42,10 +43,9 @@ class PrayerDetails : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         location.checkLocationPermission()
         points = location.fetchLocation()
-        binding.btn.setOnClickListener(){
-            Toast.makeText(requireContext(),"${points.longitude}       ><     ${points.latitude}",Toast.LENGTH_SHORT).show()
+        binding.btn.setOnClickListener() {
+            requireActivity().showToast( "${points.latitude}.toString()")
         }
-
     }
 
 }
