@@ -4,7 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
-import com.example.islamicapp.DataModels.Cordinates
+import com.example.islamicapp.DataModels.Coordinates
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
@@ -12,19 +12,19 @@ import com.google.android.gms.location.LocationServices
 class GetLocation(val context: Context) {
     private lateinit var locationRequest: LocationRequest
     private lateinit var fusedLocationClient: FusedLocationProviderClient
-    fun fetchLocation(): Cordinates {
-        var cordinates = Cordinates(0, 0)
+    fun fetchLocation(): Coordinates {
+        var coordinates = Coordinates(0, 0)
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(context)
         checkLocationPermission()
         val x = fusedLocationClient.lastLocation
         x.addOnSuccessListener {
             if (it != null) {
-                cordinates.latitude = it.latitude.toLong()
-                cordinates.longitude = it.longitude.toLong()
+                coordinates.latitude = it.latitude.toLong()
+                coordinates.longitude = it.longitude.toLong()
             }
         }
-        return cordinates
+        return coordinates
     }
 
     fun checkLocationPermission() {

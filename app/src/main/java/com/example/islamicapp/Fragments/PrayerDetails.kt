@@ -9,7 +9,7 @@ import android.widget.AutoCompleteTextView
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.example.islamicapp.DataModels.Cordinates
+import com.example.islamicapp.DataModels.Coordinates
 import com.example.islamicapp.Location.GetLocation
 import com.example.islamicapp.R
 import com.example.islamicapp.databinding.FragmentPrayerDetailsBinding
@@ -20,7 +20,7 @@ class PrayerDetails : Fragment() {
     private lateinit var cast: Array<String>
     private lateinit var autoCompleteTextView: AutoCompleteTextView
     private lateinit var ad: ArrayAdapter<String>
-    private lateinit var points :Cordinates
+    private lateinit var points :Coordinates
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
