@@ -11,3 +11,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 }
+
+// String[] cast = {"Fikah Jafferia", "Hanfia", "Ahly Sunnat", "Bralvi");
