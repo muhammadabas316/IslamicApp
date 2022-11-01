@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splahScreen">
+
+    <fragment
+        android:id="@+id/splahScreen"
+        android:name="com.example.islamicapp.Fragments.SplashScreen"
+        android:label="fragment_splah_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splahScreen_to_dashboard"
+            app:destination="@id/dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.example.islamicapp.Fragments.Dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_prayerDetails"
+            app:destination="@id/prayerDetails" />
+        <action
+            android:id="@+id/action_dashboard_to_duaAzkarDetails"
+            app:destination="@id/duaAzkarDetails" />
+        <action
+            android:id="@+id/action_dashboard_to_kalma"
+            app:destination="@id/kalma" />
+        <action
+            android:id="@+id/action_dashboard_to_quranKareem"
+            app:destination="@id/quranKareem" />
+        <action
+            android:id="@+id/action_dashboard_to_dateConversion"
+            app:destination="@id/dateConversion" />
+    </fragment>
+    <fragment
+        android:id="@+id/prayerDetails"
+        android:name="com.example.islamicapp.Fragments.PrayerDetails"
+        android:label="fragment_prayer_details"
+        tools:layout="@layout/fragment_prayer_details" />
+    <fragment
+        android:id="@+id/duaAzkarDetails"
+        android:name="com.example.islamicapp.Fragments.DuaAzkarDetails"
+        android:label="fragment_dua_azkar_details"
+        tools:layout="@layout/fragment_dua_azkar_details" />
+    <fragment
+        android:id="@+id/kalma"
+        android:name="com.example.islamicapp.Fragments.Kalma"
+        android:label="fragment_kalma"
+        tools:layout="@layout/fragment_kalma" />
+    <fragment
+        android:id="@+id/quranKareem"
+        android:name="com.example.islamicapp.Fragments.QuranKareem"
+        android:label="fragment_quran_kareem"
+        tools:layout="@layout/fragment_quran_kareem" />
+    <fragment
+        android:id="@+id/dateConversion"
+        android:name="com.example.islamicapp.Fragments.DateConversion"
+        android:label="fragment_date_conversion"
+        tools:layout="@layout/fragment_date_conversion" />
+</navigation>
