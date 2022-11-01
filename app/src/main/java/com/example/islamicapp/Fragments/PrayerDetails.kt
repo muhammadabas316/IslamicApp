@@ -31,6 +31,7 @@ class PrayerDetails : Fragment() {
 
 //        ad = ArrayAdapter<String>(requireContext(), R.layout.listitem, cast)
 //        autoCompleteTextView.setAdapter(ad)
+
         location = GetLocation(requireContext())
         binding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_prayer_details, container, false)
@@ -39,7 +40,7 @@ class PrayerDetails : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        location.checkLocationPermission()
         points = location.fetchLocation()
         binding.btn.setOnClickListener(){
             Toast.makeText(requireContext(),"${points.longitude}       ><     ${points.latitude}",Toast.LENGTH_SHORT).show()
