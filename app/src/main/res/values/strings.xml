@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Islamic App</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="kalma">Kalma</string>
     <string name="dua_azakar">Dua(s)</string>
     <string name="prayer_time">Prayer Time</string>
@@ -9,7 +8,6 @@
     <string name="mode">Mode</string>
     <string name="quran">Quran</string>
     <string name="select_cast">Select Cast</string>
-    <string name="select">Select item</string>
     <string name="select_item">Select Item</string>
     <string name="click_me">Click me</string>
 </resources>

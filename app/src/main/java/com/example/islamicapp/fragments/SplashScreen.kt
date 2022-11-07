@@ -1,4 +1,4 @@
-package com.example.islamicapp.Fragments
+package com.example.islamicapp.fragments
 
 import android.os.Bundle
 import android.os.Handler
@@ -9,8 +9,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.islamicapp.R
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class SplashScreen : Fragment() {
 
     override fun onCreateView(
