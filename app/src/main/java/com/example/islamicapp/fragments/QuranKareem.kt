@@ -1,4 +1,4 @@
-package com.example.islamicapp.Fragments
+package com.example.islamicapp.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

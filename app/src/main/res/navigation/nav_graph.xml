@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splahScreen"
-        android:name="com.example.islamicapp.Fragments.SplashScreen"
+        android:name="com.example.islamicapp.fragments.SplashScreen"
         android:label="fragment_splah_screen"
         tools:layout="@layout/fragment_splash_screen">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/dashboard"
-        android:name="com.example.islamicapp.Fragments.Dashboard"
+        android:name="com.example.islamicapp.fragments.dashboard.Dashboard"
         android:label="fragment_dashboard"
         tools:layout="@layout/fragment_dashboard">
         <action
@@ -37,27 +37,27 @@
     </fragment>
     <fragment
         android:id="@+id/prayerDetails"
-        android:name="com.example.islamicapp.Fragments.PrayerDetails"
+        android:name="com.example.islamicapp.fragments.prayers.PrayerDetails"
         android:label="fragment_prayer_details"
         tools:layout="@layout/fragment_prayer_details" />
     <fragment
         android:id="@+id/duaAzkarDetails"
-        android:name="com.example.islamicapp.Fragments.DuaAzkarDetails"
+        android:name="com.example.islamicapp.fragments.DuaAzkarDetails"
         android:label="fragment_dua_azkar_details"
         tools:layout="@layout/fragment_dua_azkar_details" />
     <fragment
         android:id="@+id/kalma"
-        android:name="com.example.islamicapp.Fragments.Kalma"
+        android:name="com.example.islamicapp.fragments.Kalma"
         android:label="fragment_kalma"
         tools:layout="@layout/fragment_kalma" />
     <fragment
         android:id="@+id/quranKareem"
-        android:name="com.example.islamicapp.Fragments.QuranKareem"
+        android:name="com.example.islamicapp.fragments.QuranKareem"
         android:label="fragment_quran_kareem"
         tools:layout="@layout/fragment_quran_kareem" />
     <fragment
         android:id="@+id/dateConversion"
-        android:name="com.example.islamicapp.Fragments.DateConversion"
+        android:name="com.example.islamicapp.fragments.DateConversion"
         android:label="fragment_date_conversion"
         tools:layout="@layout/fragment_date_conversion" />
 </navigation>
