@@ -1,4 +1,4 @@
-package com.example.islamicapp.fragments
+package com.example.islamicapp.fragments.prayers
 
 import android.os.Build
 import android.os.Bundle
@@ -11,19 +11,26 @@ import android.widget.AutoCompleteTextView
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.example.islamicapp.R
-import com.example.islamicapp.utils.showToast
 import com.example.islamicapp.databinding.FragmentPrayerDetailsBinding
+import com.example.islamicapp.utils.showToast
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class PrayerDetails : Fragment() {
     private lateinit var binding: FragmentPrayerDetailsBinding
     private lateinit var cast: Array<String>
     private lateinit var autoCompleteTextView: AutoCompleteTextView
     private lateinit var ad: ArrayAdapter<String>
+
+    val vm: PrayerViewModel by viewModels()
+
+    @RequiresApi(Build.VERSION_CODES.P)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_prayer_details, container, false)
         cast = arrayOf("Ahly Tashaih", "Ahly Sunnat")

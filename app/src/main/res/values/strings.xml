@@ -10,4 +10,7 @@
     <string name="select_cast">Select Cast</string>
     <string name="select_item">Select Item</string>
     <string name="click_me">Click me</string>
+    <string name="geogian_date">Enter date ac to georgian calender</string>
+    <string name="check">Check</string>
+    <string name="hijri_date">Enter date ac to Hijri</string>
 </resources>

@@ -2,6 +2,7 @@ package com.example.islamicapp
 
 import android.Manifest
 import android.app.Activity
+import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.os.Handler
@@ -17,7 +18,4 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
 }
-
-// String[] cast = {"Fikah Jafferia", "Hanfia", "Ahly Sunnat", "Bralvi");

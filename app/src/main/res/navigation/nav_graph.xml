@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/prayerDetails"
-        android:name="com.example.islamicapp.fragments.PrayerDetails"
+        android:name="com.example.islamicapp.fragments.prayers.PrayerDetails"
         android:label="fragment_prayer_details"
         tools:layout="@layout/fragment_prayer_details" />
     <fragment
